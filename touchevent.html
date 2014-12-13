@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="min-height:500px;background-color:#ddd;" id="body">
+
+
+<script type="text/javascript" src="touchevent.js"></script>
+<script type="text/javascript">
+	var th = new touchHandle('body',100);
+	th.setCbRight(function(offsetX) {
+		console.info('right');
+		console.info('call me? yes,it is.',offsetX);
+	});
+	th.setCbLeft(function(offsetX) {
+		console.info('left');
+		console.info('call you? yes,it is.',offsetX);
+	});
+
+</script>
+</body>
+</html>
