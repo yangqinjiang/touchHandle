@@ -4,8 +4,8 @@ var touchHandle = function (parent_name,threshold,callback_right,callback_left){
 	var self = this;
 	self.threshold =  threshold || 100;
 	self.trigger = false;
-	var _callback_right = callback_right || function  (offsetX) {};
-	var _callback_left = callback_left || function  (offsetX) {};
+	var _callback_right = callback_right || function  (offsetX) {console.log('default right');};
+	var _callback_left = callback_left || function  (offsetX) {console.log('default  left');};
 	
 
 	//
